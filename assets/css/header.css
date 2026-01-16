@@ -1,4 +1,4 @@
-/* ================= TOP BAR ================= */
+/* topbar */
 .header-top-bar {
   background: #b40101;
   display: flex;
@@ -10,7 +10,7 @@
   width: 100%;
 }
 
-/* ================= HEADER ================= */
+/* header */
 :root {
   --tgdd-yellow: #ffd400;
 }
@@ -46,7 +46,7 @@
   align-items: center;
   gap: 16px;
   padding: 8px 0;
-  top: 0; /* BẮT BUỘC */
+  top: 0;
   z-index: 1001;
   height: 64px;
   transition: box-shadow 0.25s ease;
@@ -111,7 +111,7 @@
   min-width: 250px;
   height: 36px;
 
-  padding: 0 40px 0 16px; /* chừa chỗ BÊN PHẢI cho mũi tên */
+  padding: 0 40px 0 16px;
   background: #ffe14c;
   border-radius: 999px;
 
@@ -144,7 +144,7 @@
   transform: translateY(-50%) rotate(90deg);
 }
 
-/* ================= NAV ================= */
+/* Nav */
 .main-nav {
   background: var(--tgdd-yellow);
   position: relative;

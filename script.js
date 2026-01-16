@@ -11,7 +11,6 @@ const cards = document.querySelectorAll(".suggest-card");
 
 const STEP = 12;
 let visibleCount = STEP;
-/* ================= INSTALLMENT SLIDER (TGDD STYLE) ================= */
 
 const installmentTrack = document.querySelector(".installment-track");
 const installmentPages = document.querySelectorAll(".installment-page");
@@ -55,20 +54,6 @@ if (
 
   updateInstallmentSlider();
 }
-
-document.addEventListener("DOMContentLoaded", () => {
-  const mainNav = document.querySelector("nav.main-nav");
-
-  if (!mainNav) return;
-
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 120) {
-      mainNav.classList.add("show");
-    } else {
-      mainNav.classList.remove("show");
-    }
-  });
-});
 
 // hiển thị 12 card đầu
 cards.forEach((card, i) => {

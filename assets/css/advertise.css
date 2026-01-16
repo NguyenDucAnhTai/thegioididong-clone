@@ -3,7 +3,7 @@
   z-index: 2;
   max-width: 1000px;
   margin: 24px auto;
-  padding: 0; /* TGDD không padding section */
+  padding: 0;
 }
 
 /* header */
@@ -27,7 +27,7 @@
 .advertise-banner {
   width: 100%;
   border-radius: 14px;
-  overflow: hidden; /* QUAN TRỌNG để bo góc ảnh */
+  overflow: hidden;
 }
 
 .advertise-banner img {

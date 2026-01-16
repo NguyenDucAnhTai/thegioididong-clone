@@ -1,4 +1,4 @@
-/* ================= FOOTER ================= */
+/* footer */
 
 .tgdd-footer {
   background: #fff;
@@ -8,7 +8,7 @@
   color: #333;
 }
 
-/* ========== INNER GRID ========== */
+/* Grid */
 .footer-inner {
   max-width: 1000px;
   margin: 0 auto;
@@ -19,7 +19,7 @@
   column-gap: 28px;
 }
 
-/* ========== COLUMNS ========== */
+/* collumn */
 .footer-col h4 {
   font-size: 14px;
   font-weight: 700;
@@ -38,7 +38,7 @@
   line-height: 1.65;
 }
 
-/* ========== LINKS ========== */
+/* links */
 .footer-col a {
   color: #0060ff;
   text-decoration: none;
@@ -49,7 +49,7 @@
   color: #0048cc;
 }
 
-/* ========== BRAND TAGS ========== */
+/* brand tags */
 .footer-brands {
   display: flex;
   flex-wrap: wrap;
@@ -66,7 +66,7 @@
   white-space: nowrap;
 }
 
-/* ========== SOCIAL ========== */
+/* social */
 .footer-social {
   display: flex;
   gap: 14px;
@@ -78,7 +78,7 @@
   color: #0060ff;
 }
 
-/* ========== CERT ========== */
+/* cert */
 .footer-cert {
   display: flex;
   gap: 8px;
@@ -92,7 +92,7 @@
   color: #333;
 }
 
-/* ========== BOTTOM BAR ========== */
+/* bottom bar */
 .footer-bottom {
   background: #f9fafb;
   border-top: 1px solid #e5e7eb;

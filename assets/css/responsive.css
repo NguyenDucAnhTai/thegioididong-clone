@@ -1,7 +1,3 @@
-/* =================================================
-   TABLET – iPad / Small Laptop (TGDD STYLE)
-================================================= */
-
 @media (max-width: 1024px) {
   .container-contain {
     background: #f5f5f5 !important;
@@ -12,8 +8,6 @@
     max-width: 100%;
     padding: 0 16px;
   }
-
-  /* ===== SECTION (NOT FULL RED) ===== */
 
   .promo-section,
   .suggest-section,
@@ -47,7 +41,6 @@
   .product-section .promo-products {
     width: 100%;
   }
-  /* ===== TITLE ===== */
 
   .section-title,
   .header-title h3 {
@@ -56,8 +49,6 @@
     color: #111;
     padding: 12px 12px 8px;
   }
-
-  /* ===== GRID ===== */
 
   .product-grid,
   .suggest-grid {
@@ -73,13 +64,7 @@
   }
 }
 
-/* =================================================
-   MOBILE – TGDD REAL UI (CLOSEST MATCH)
-================================================= */
-
 @media (max-width: 768px) {
-  /* ===== GLOBAL ===== */
-
   html,
   body {
     width: 100%;
@@ -95,15 +80,6 @@
 
   .container {
     padding: 0;
-  }
-
-  /* ===== HEADER ===== */
-
-  /* =================================================
-   MOBILE – TOPBAR (LOGO + LOCATION + LOGIN ONLY)
-================================================= */
-
-  @media (max-width: 768px) {
     /* topbar container */
     .topbar.container {
       display: flex;
@@ -160,92 +136,17 @@
       height: 12px;
     }
   }
-
-  /* SEARCH – phải HIỆN trên mobile */
   .search-box {
     display: block !important;
     flex: 1;
   }
 
-  /* ===== PROMO TIMELINE (MOBILE FIX) ===== */
-
-  .timeline {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 6px;
-
-    padding: 6px 8px;
-    margin: 0 8px 8px;
-
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 0 1px #eee;
-  }
-
-  /* mỗi mốc */
-  .timeline-item {
-    flex: 1;
-    min-width: 0;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    padding: 4px 2px;
-    border-radius: 8px;
-
-    font-size: 11px;
-    color: #666;
-  }
-
-  /* label */
-  .timeline-item .label {
-    font-size: 10px;
-    line-height: 1.2;
-    margin-bottom: 2px;
-    white-space: nowrap;
-  }
-
-  /* giờ */
-  .timeline-item .time {
-    font-size: 13px;
-    font-weight: 600;
-    color: #222;
-  }
-
-  /* ===== ACTIVE ===== */
-
-  .timeline-item.active {
-    background: #fff3f3;
-    color: #d0021c;
-  }
-
-  .timeline-item.active .label {
-    color: #d0021c;
-    font-weight: 600;
-  }
-
-  /* countdown */
-  .countdown-timer {
-    display: flex;
-    align-items: center;
-    gap: 2px;
-    font-size: 12px;
-  }
-
-  .countdown-timer .box {
-    min-width: 22px;
-    padding: 2px 3px;
-
-    background: #d0021c;
-    color: #fff;
-    border-radius: 4px;
-
-    font-size: 11px;
-    font-weight: 700;
-    text-align: center;
+  .timeline,
+  .timeline-item,
+  .countdown-timer,
+  .deal-timer,
+  .countdown {
+    display: none !important;
   }
 
   .main-nav {
@@ -259,17 +160,11 @@
     display: none !important;
   }
 
-  /* =================================================
-   PROMO SECTION: BANNER TOP – SLIDER BOTTOM (MOBILE)
-================================================= */
-
   .product-section .product-content {
     display: flex;
     flex-direction: column;
     gap: 8px;
   }
-
-  /* ===== PROMO BANNER ===== */
 
   .product-section .promo-banner {
     flex: none !important;
@@ -292,8 +187,6 @@
     border-radius: 10px;
   }
 
-  /* ===== PROMO PRODUCTS (SLIDER) ===== */
-
   .product-section .promo-products {
     width: 100% !important;
     margin: 0 !important;
@@ -303,15 +196,12 @@
     height: auto !important;
   }
 
-  /* reset khoảng trắng ảo */
   .product-section .promo-viewport,
   .product-section .installment-track,
   .product-section .installment-page {
     margin: 0 !important;
     padding: 0 !important;
   }
-
-  /* ===== SECTION ===== */
 
   .promo-section,
   .suggest-section,

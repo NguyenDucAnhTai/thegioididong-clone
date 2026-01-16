@@ -124,7 +124,7 @@
   line-height: 1.4;
   font-weight: 500;
   margin-bottom: 6px;
-  min-height: 40px; /* giữ đều chiều cao title */
+  min-height: 40px;
 }
 
 /* giá */
