@@ -1,0 +1,110 @@
+/* ================= FOOTER ================= */
+
+.tgdd-footer {
+  background: #fff;
+  border-top: 1px solid #e5e7eb;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #333;
+}
+
+/* ========== INNER GRID ========== */
+.footer-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px 16px 20px;
+
+  display: grid;
+  grid-template-columns: 1.35fr 1fr 1.1fr 1.6fr;
+  column-gap: 28px;
+}
+
+/* ========== COLUMNS ========== */
+.footer-col h4 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #111;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col li {
+  margin-bottom: 6px;
+  line-height: 1.65;
+}
+
+/* ========== LINKS ========== */
+.footer-col a {
+  color: #0060ff;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.footer-col a:hover {
+  color: #0048cc;
+}
+
+/* ========== BRAND TAGS ========== */
+.footer-brands {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.footer-brands span {
+  background: #f1f3f4;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  color: #333;
+  white-space: nowrap;
+}
+
+/* ========== SOCIAL ========== */
+.footer-social {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 10px;
+}
+
+.footer-social a {
+  font-size: 13px;
+  color: #0060ff;
+}
+
+/* ========== CERT ========== */
+.footer-cert {
+  display: flex;
+  gap: 8px;
+}
+
+.footer-cert span {
+  border: 1px solid #e5e7eb;
+  padding: 4px 6px;
+  font-size: 11px;
+  border-radius: 4px;
+  color: #333;
+}
+
+/* ========== BOTTOM BAR ========== */
+.footer-bottom {
+  background: #f9fafb;
+  border-top: 1px solid #e5e7eb;
+  padding: 12px 16px;
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+  line-height: 1.6;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer-bottom-wrapper {
+  background: #f9fafb;
+}

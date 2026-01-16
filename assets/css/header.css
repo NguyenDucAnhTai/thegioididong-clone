@@ -1,0 +1,190 @@
+/* ================= TOP BAR ================= */
+.header-top-bar {
+  background: #b40101;
+  display: flex;
+  justify-content: center;
+}
+
+.media-slider img {
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* ================= HEADER ================= */
+:root {
+  --tgdd-yellow: #ffd400;
+}
+
+.site-header {
+  background: var(--tgdd-yellow);
+  z-index: 1000;
+  transition: box-shadow 0.25s ease;
+}
+
+.site-header.is-sticky {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.topbar-wrap {
+  position: relative;
+  width: 100%;
+  background: #ffd400;
+  z-index: 1000;
+}
+
+.topbar-wrap.is-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.topbar {
+  position: sticky;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 8px 0;
+  top: 0; /* BẮT BUỘC */
+  z-index: 1001;
+  height: 64px;
+  transition: box-shadow 0.25s ease;
+}
+
+.topbar .container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  height: 64px;
+}
+
+.logo {
+  width: 200px;
+  height: 45px;
+  background: url(//cdnv2.tgdd.vn/webmwg/2024/ContentMwg/images/newyear/2026/TGDD/logo-dt.png)
+    no-repeat center / contain;
+  flex-shrink: 0;
+}
+
+.search-box {
+  flex: 1;
+  max-width: 480px;
+}
+
+.search-wrapper {
+  display: flex;
+  align-items: center;
+  background: #f1f3f4;
+  height: 40px;
+  padding: 8px 14px;
+  border-radius: 25px;
+}
+
+.search-wrapper input {
+  border: none;
+  background-color: #f1f3f4;
+  outline: none;
+  flex: 1;
+  padding-left: 10px;
+  font-size: 13px;
+}
+
+.search-wrapper input::placeholder {
+  color: #f69113;
+}
+
+.action-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+  white-space: nowrap;
+}
+
+.location-pill {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  min-width: 250px;
+  height: 36px;
+
+  padding: 0 40px 0 16px; /* chừa chỗ BÊN PHẢI cho mũi tên */
+  background: #ffe14c;
+  border-radius: 999px;
+
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.location-pill .icon-arrow {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  stroke-width: 2.5;
+}
+
+.location-pill .icon-location {
+  flex-shrink: 0;
+}
+
+.location-pill span {
+  white-space: nowrap;
+}
+
+.location-pill:hover {
+  background: #ffd633;
+}
+
+.location-pill.open .icon-arrow {
+  transform: translateY(-50%) rotate(90deg);
+}
+
+/* ================= NAV ================= */
+.main-nav {
+  background: var(--tgdd-yellow);
+  position: relative;
+  z-index: 1;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  height: 48px;
+}
+
+.nav-list a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: #222;
+  text-decoration: none;
+  padding: 6px 4px;
+}
+
+.nav-list a:hover {
+  color: #0060ff;
+}
+
+.nav-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+  stroke: #333;
+  fill: none;
+}
+
+.arrow-down {
+  border: solid #333;
+  border-width: 0 1.5px 1.5px 0;
+  display: inline-block;
+  padding: 2.5px;
+  transform: rotate(45deg);
+  margin-left: 5px;
+}

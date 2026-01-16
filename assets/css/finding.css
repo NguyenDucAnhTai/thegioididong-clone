@@ -1,0 +1,57 @@
+/* Finding Section */
+/* SECTION */
+.finding-section {
+  position: relative;
+  z-index: 2;
+  max-width: 1000px;
+  margin: 24px auto;
+}
+
+/* HEADER */
+.finding-header {
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.finding-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.finding-title h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffd400;
+  padding-left: 10px;
+}
+
+/* BOX BAO NGOÀI */
+.finding-box {
+  background: #fff;
+  border-radius: 14px;
+  padding: 14px 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+/* TAG LIST */
+.finding-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* TAG ITEM */
+.finding-tags a {
+  font-size: 13px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  background: #f2f4f7;
+  color: #333;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.finding-tags a:hover {
+  background: #e4e7ec;
+}

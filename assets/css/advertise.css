@@ -1,0 +1,38 @@
+.advertise-section {
+  position: relative;
+  z-index: 2;
+  max-width: 1000px;
+  margin: 24px auto;
+  padding: 0; /* TGDD không padding section */
+}
+
+/* header */
+.advertise-header {
+  margin-bottom: 10px;
+}
+
+.advertise-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.advertise-title h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffd400;
+}
+
+/* banner */
+.advertise-banner {
+  width: 100%;
+  border-radius: 14px;
+  overflow: hidden; /* QUAN TRỌNG để bo góc ảnh */
+}
+
+.advertise-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 14px;
+}

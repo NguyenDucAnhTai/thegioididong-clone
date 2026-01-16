@@ -1,0 +1,70 @@
+/* Social Section */
+/* === SOCIAL TGDD === */
+.social-section {
+  max-width: 1000px;
+  margin: 24px auto;
+}
+
+.social-box {
+  background: #fff;
+  border-radius: 14px;
+  padding: 16px;
+}
+
+.social-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.social-header h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1d2939; /* TGDD dùng chữ đen */
+}
+
+/* grid */
+.social-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.social-card {
+  text-decoration: none;
+  color: #1d2939;
+}
+
+.social-card img {
+  width: 100%;
+  height: 135px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+.social-card p {
+  margin-top: 6px;
+  font-size: 13px;
+  line-height: 1.35;
+  height: 36px;
+  overflow: hidden;
+}
+
+/* xem thêm */
+.social-more {
+  text-align: center;
+  margin-top: 12px;
+}
+
+.social-more a {
+  font-size: 14px;
+  color: #2f80ed;
+  text-decoration: none;
+}
+
+.social-more span {
+  font-size: 18px;
+  vertical-align: middle;
+}

@@ -1,0 +1,1544 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Thegioididong – Static Homepage Clone</title>
+    <meta name="description"
+        content="Static clone of Thegioididong homepage layout using only HTML, CSS and vanilla JS." />
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/variables.css">
+    <link rel="stylesheet" href="./assets/css/common.css">
+
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/promo.css">
+    <link rel="stylesheet" href="./assets/css/online.css">
+    <link rel="stylesheet" href="./assets/css/suggest.css">
+    <link rel="stylesheet" href="./assets/css/product.css">
+    <link rel="stylesheet" href="./assets/css/advertise.css">
+
+    <link rel="stylesheet" href="./assets/css/coupon.css">
+    <link rel="stylesheet" href="./assets/css/social.css">
+    <link rel="stylesheet" href="./assets/css/finding.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+
+<body>
+    <div class="header-top-bar">
+        <div class="media-slider">
+            <img width="1200" height="44" loading="lazy" class="owl-lazy lazyloaded"
+                data-src="//cdnv2.tgdd.vn/mwg-static/tgdd/Banner/4d/01/4d010fd083048e3a2672bb9528789ca7.png"
+                alt="Banner top bar"
+                src="https://cdnv2.tgdd.vn/mwg-static/tgdd/Banner/25/28/2528971e6119a5d6b12f5e9b03c11131.png">
+        </div>
+    </div>
+    <header class="site-header">
+        <div class="topbar-wrap">
+            <div class="topbar container">
+                <a class="logo" href="/"></a>
+
+                <form class="search-box">
+                    <div class="search-wrapper">
+                        <svg class="icon-search" width="18" height="18" viewBox="0 0 24 24" fill="none">
+                            <circle cx="11" cy="11" r="7" stroke="#999" stroke-width="2" />
+                            <path d="M20 20L16.65 16.65" stroke="#999" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                        <input type="text" placeholder="Cơ hội nhận mã giảm 400k">
+                    </div>
+                </form>
+
+                <a href="#" class="action-item">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.5">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                        <circle cx="12" cy="7" r="4" />
+                    </svg>
+                    <span>Đăng nhập</span>
+                </a>
+
+                <a href="#" class="action-item">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.5">
+                        <path d="M6 6h15l-1.5 9H7.5L6 6Z" />
+                        <path d="M6 6 5 3H3" />
+                        <circle cx="9" cy="20" r="1.5" fill="currentColor" />
+                        <circle cx="18" cy="20" r="1.5" fill="currentColor" />
+                    </svg>
+                    <span>Giỏ hàng</span>
+                </a>
+
+                <div class="location-pill">
+                    <svg class="icon-location" width="16" height="16" viewBox="0 0 24 24">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                        <circle cx="12" cy="10" r="3" />
+                    </svg>
+
+                    <span>Hồ Chí Minh</span>
+
+                    <svg class="icon-arrow" width="12" height="12" viewBox="0 0 24 24">
+                        <path d="M9 18l6-6-6-6" />
+                    </svg>
+                </div>
+
+            </div>
+        </div>
+        <nav class="main-nav">
+            <div class="container">
+                <ul class="nav-list">
+                    <li>
+                        <a href="#">
+                            <svg class="nav-icon" viewBox="0 0 24 24">
+                                <path
+                                    d="M17 2H7c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-5 18c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z" />
+                            </svg>
+                            Điện thoại
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg class="nav-icon" viewBox="0 0 24 24">
+                                <path
+                                    d="M20 18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z" />
+                            </svg>
+                            Laptop
+                        </a>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#">
+                            <svg class="nav-icon" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2C8.14 2 5 5.14 5 9v4.47c-1.14.46-2 1.58-2 2.89v2c0 1.41 1.01 2.57 2.35 2.82.47 1.05 1.51 1.82 2.65 1.82h8c1.14 0 2.18-.77 2.65-1.82 1.34-.25 2.35-1.41 2.35-2.82v-2c0-1.31-.86-2.43-2-2.89V9c0-3.86-3.14-7-7-7z" />
+                            </svg>
+                            Phụ kiện
+                            <i class="arrow-down"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg class="nav-icon" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="7" />
+                                <path d="M12 9v3l2 2" />
+                            </svg>
+                            Smartwatch
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg class="nav-icon" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="9" />
+                                <path d="M12 7v5l3 3" />
+                            </svg>
+                            Đồng hồ
+                        </a>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#">
+                            <svg class="nav-icon" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10H7v-2h10v2z" />
+                            </svg>
+                            Máy cũ, Thu cũ
+                            <i class="arrow-down"></i>
+                        </a>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#">
+                            <svg class="nav-icon" viewBox="0 0 24 24">
+                                <path
+                                    d="M21 2H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h7l-2 3v1h8v-1l-2-3h7c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z" />
+                            </svg>
+                            Màn hình, Máy in
+                            <i class="arrow-down"></i>
+                        </a>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#">
+                            <svg class="nav-icon" viewBox="0 0 24 24">
+                                <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z" />
+                            </svg>
+                            Sim, Thẻ cào
+                            <i class="arrow-down"></i>
+                        </a>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#">
+                            <svg class="nav-icon" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1z" />
+                            </svg>
+                            Dịch vụ tiện ích
+                            <i class="arrow-down"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container-contain">
+            <div class="decor-left">
+                <img src="//cdnv2.tgdd.vn/webmwg/2024/ContentMwg/images/newyear/2026/TGDD/label-left.gif"
+                    alt="Decor Left">
+            </div>
+
+            <div class="decor-right">
+                <img src="https://cdnv2.tgdd.vn/webmwg/2024/ContentMwg/images/newyear/2026/TGDD/label-right.gif"
+                    alt="Decor Right">
+            </div>
+
+            <div class="promo-container">
+                <div class="promo-header">
+                    <div class="header-title">
+                        <i class="icon-star"></i>
+                        <h3 class="txt-yellow">KHUYẾN MÃI ONLINE</h3>
+                    </div>
+                </div>
+                <div class="promo-tabs-wrap">
+                    <ul class="promo-tabs">
+                        <!-- LEFT: campaign -->
+                        <li class="promo-campaign">
+                            <ul>
+                                <li>
+                                    <a class="p-tab">
+                                        <img src="https://cdnv2.tgdd.vn/mwg-static/common/Campaign/7f/ef/7fef8b061259beac62885a6d7e1ede9c.png"
+                                            alt="Flash Sale">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="p-tab">
+                                        <img src="https://cdnv2.tgdd.vn/mwg-static/common/Campaign/62/87/62879b9cbcf5e19cd9b7be6add6623b1.png"
+                                            alt="Sale 50%">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="p-tab">
+                                        <img src="https://cdnv2.tgdd.vn/mwg-static/common/Campaign/7a/e0/7ae0723d3d978fd4c8a2c77f3bf4bd3a.png"
+                                            alt="Online Buying">
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- RIGHT: category -->
+                        <li class="promo-category">
+                            <ul>
+                                <li><a class="p-tab active">Điện thoại</a></li>
+                                <li><a class="p-tab">Apple</a></li>
+                                <li><a class="p-tab">Laptop</a></li>
+                                <li><a class="p-tab">Phụ kiện</a></li>
+                                <li><a class="p-tab">Đồng hồ</a></li>
+                                <li><a class="p-tab">PC, Máy in</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="promo-wrapper">
+                    <div class="timeline">
+                        <div class="timeline-item active">
+                            <span class="label">Chỉ còn:</span>
+                            <div class="countdown-timer">
+                                <span class="box">02</span> : <span class="box">27</span> : <span class="box">28</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="label">Sắp diễn ra</span>
+                            <span class="time">15:00</span>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="label">Sắp diễn ra</span>
+                            <span class="time">18:00</span>
+                        </div>
+                    </div>
+
+
+                    <div class="promo-slider">
+                        <button class="control prev is-disabled" data-prev>❮</button>
+                        <button class="control next" data-next>❯</button>
+
+                        <div class="promo-track">
+
+                            <!-- PAGE 1 -->
+                            <div class="promo-page">
+                                <div class="promo-page-inner">
+                                    <ul class="product-grid">
+                                        <!-- 12 product-card -->
+                                        <li class="product-card">
+                                            <img src="https://cdn.tgdd.vn/Products/Images/42/334932/samsung-galaxy-a56-5g-gray-thumb-1-600x600.jpg"
+                                                alt="">
+                                            <h3 class="name">Samsung Galaxy A56 5G</h3>
+
+                                            <div class="price">10.680.000đ</div>
+                                            <div class="old-price">11.780.000đ</div>
+
+                                            <div class="status">🔥 Còn 12/20 suất</div>
+                                            <a class="buy-btn">Mua ngay</a>
+                                        </li>
+                                        <li class="product-card">
+                                            <img src="https://cdn.tgdd.vn/Products/Images/42/342679/iphone-17-pro-max-cam-thumb-600x600.jpg"
+                                                alt="">
+                                            <h3 class="name">Samsung Galaxy A56 5G</h3>
+
+                                            <div class="price">10.680.000đ</div>
+                                            <div class="old-price">11.780.000đ</div>
+
+                                            <div class="status">🔥 Còn 12/20 suất</div>
+                                            <a class="buy-btn">Mua ngay</a>
+                                        </li>
+                                        <li class="product-card">
+                                            <img src="https://cdn.tgdd.vn/Products/Images/54/315014/tai-nghe-bluetooth-airpods-pro-2nd-gen-usb-c-charge-apple-thumb-1-600x600.jpg"
+                                                alt="">
+                                            <h3 class="name">Samsung Galaxy A56 5G</h3>
+
+                                            <div class="price">10.680.000đ</div>
+                                            <div class="old-price">11.780.000đ</div>
+
+                                            <div class="status">🔥 Còn 12/20 suất</div>
+                                            <a class="buy-btn">Mua ngay</a>
+                                        </li>
+                                        <li class="product-card">
+                                            <img src="https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/5693/328640/hprt-ft800-bluetooth-trang-thumb-new-638628790532210323-600x600.jpg"
+                                                alt="">
+                                            <h3 class="name">Samsung Galaxy A56 5G</h3>
+
+                                            <div class="price">10.680.000đ</div>
+                                            <div class="old-price">11.780.000đ</div>
+
+                                            <div class="status">🔥 Còn 12/20 suất</div>
+                                            <a class="buy-btn">Mua ngay</a>
+                                        </li>
+                                        <li class="product-card">
+                                            <img src="https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/2162/326061/loa-bluetooth-jbl-partybox-120-120625-042754-510-600x600.jpg"
+                                                alt="">
+                                            <h3 class="name">Samsung Galaxy A56 5G</h3>
+
+                                            <div class="price">10.680.000đ</div>
+                                            <div class="old-price">11.780.000đ</div>
+
+                                            <div class="status">🔥 Còn 12/20 suất</div>
+                                            <a class="buy-btn">Mua ngay</a>
+                                        </li>
+                                        <li class="product-card">
+                                            <img src="https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/7264/328194/edifice-casio-efv-c120d-3adf-nam-thumb-638926899969981955-600x600.jpg"
+                                                alt="">
+                                            <h3 class="name">Samsung Galaxy A56 5G</h3>
+
+                                            <div class="price">10.680.000đ</div>
+                                            <div class="old-price">11.780.000đ</div>
+
+                                            <div class="status">🔥 Còn 12/20 suất</div>
+                                            <a class="buy-btn">Mua ngay</a>
+                                        </li>
+                                        <li class="product-card">
+                                            <img src="https://cdn.tgdd.vn/Products/Images/42/343066/realme-15-5g-thumb-600x600.jpg"
+                                                alt="">
+                                            <h3 class="name">Samsung Galaxy A56 5G</h3>
+
+                                            <div class="price">10.680.000đ</div>
+                                            <div class="old-price">11.780.000đ</div>
+
+                                            <div class="status">🔥 Còn 12/20 suất</div>
+                                            <a class="buy-btn">Mua ngay</a>
+                                        </li>
+                                        <li class="product-card">
+                                            <img src="https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/358093/macbook-pro-14-inch-nano-m5-16gb-512gb-den-638962956060321611-600x600.jpg"
+                                                alt="">
+                                            <h3 class="name">Samsung Galaxy A56 5G</h3>
+
+                                            <div class="price">10.680.000đ</div>
+                                            <div class="old-price">11.780.000đ</div>
+
+                                            <div class="status">🔥 Còn 12/20 suất</div>
+                                            <a class="buy-btn">Mua ngay</a>
+                                        </li>
+                                        <li class="product-card">
+                                            <img src="https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/327406/hp-probook-450-g10-i5-9h1n5pt-170225-110838-638-600x600.jpg"
+                                                alt="">
+                                            <h3 class="name">Samsung Galaxy A56 5G</h3>
+
+                                            <div class="price">10.680.000đ</div>
+                                            <div class="old-price">11.780.000đ</div>
+
+                                            <div class="status">🔥 Còn 12/20 suất</div>
+                                            <a class="buy-btn">Mua ngay</a>
+                                        </li>
+                                        <li class="product-card">
+                                            <img src="https://cdn.tgdd.vn/Products/Images/54/325122/tai-nghe-bluetooth-true-wireless-ava-buds-life-air-3-600x600.jpg"
+                                                alt="">
+                                            <h3 class="name">Samsung Galaxy A56 5G</h3>
+
+                                            <div class="price">10.680.000đ</div>
+                                            <div class="old-price">11.780.000đ</div>
+
+                                            <div class="status">🔥 Còn 12/20 suất</div>
+                                            <a class="buy-btn">Mua ngay</a>
+                                        </li>
+                                        <li class="product-card">
+                                            <img src="https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/7264/332290/elio-el157-01-nu-thumb-638684010005546537-600x600.jpg"
+                                                alt="">
+                                            <h3 class="name">Samsung Galaxy A56 5G</h3>
+
+                                            <div class="price">10.680.000đ</div>
+                                            <div class="old-price">11.780.000đ</div>
+
+                                            <div class="status">🔥 Còn 12/20 suất</div>
+                                            <a class="buy-btn">Mua ngay</a>
+                                        </li>
+                                        <li class="product-card">
+                                            <img src="https://cdn.tgdd.vn/Products/Images/42/326023/vivo-y28-xanh-thumbn-600x600.jpg"
+                                                alt="">
+                                            <h3 class="name">Samsung Galaxy A56 5G</h3>
+
+                                            <div class="price">10.680.000đ</div>
+                                            <div class="old-price">11.780.000đ</div>
+
+                                            <div class="status">🔥 Còn 12/20 suất</div>
+                                            <a class="buy-btn">Mua ngay</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- PAGE 2 -->
+                            <div class="promo-page">
+                                <div class="promo-page-inner">
+                                    <ul class="product-grid">
+                                        <!-- 12 product-card -->
+                                        <li class="product-card">
+                                            <img src="https://cdn.tgdd.vn/Products/Images/42/335638/xiaomi-redmi-13x-blue-thumbn-600x600.jpg"
+                                                alt="">
+                                            <h3 class="name">Samsung Galaxy A56 5G</h3>
+
+                                            <div class="price">10.680.000đ</div>
+                                            <div class="old-price">11.780.000đ</div>
+
+                                            <div class="status">🔥 Còn 12/20 suất</div>
+                                            <a class="buy-btn">Mua ngay</a>
+                                        </li>
+                                        <li class="product-card">
+                                            <img src="https://cdn.tgdd.vn/Products/Images/42/329149/iphone-16-pro-max-sa-mac-thumb-1-600x600.jpg"
+                                                alt="">
+                                            <h3 class="name">Samsung Galaxy A56 5G</h3>
+
+                                            <div class="price">10.680.000đ</div>
+                                            <div class="old-price">11.780.000đ</div>
+
+                                            <div class="status">🔥 Còn 12/20 suất</div>
+                                            <a class="buy-btn">Mua ngay</a>
+                                        </li>
+                                        <li class="product-card">
+                                            <img src="https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/5698/331493/mac-mini-m4-16gb-256gb-bac-mu9d3sa-a-thumb-10-638659156982590429-600x600.jpg"
+                                                alt="">
+                                            <h3 class="name">Samsung Galaxy A56 5G</h3>
+
+                                            <div class="price">10.680.000đ</div>
+                                            <div class="old-price">11.780.000đ</div>
+
+                                            <div class="status">🔥 Còn 12/20 suất</div>
+                                            <a class="buy-btn">Mua ngay</a>
+                                        </li>
+                                        <li class="product-card">
+                                            <img src="https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/5698/335812/asus-v500mv-i5-13420h-8gb-512gb-den-1-638779170202381589-600x600.jpg"
+                                                alt="">
+                                            <h3 class="name">Samsung Galaxy A56 5G</h3>
+
+                                            <div class="price">10.680.000đ</div>
+                                            <div class="old-price">11.780.000đ</div>
+
+                                            <div class="status">🔥 Còn 12/20 suất</div>
+                                            <a class="buy-btn">Mua ngay</a>
+                                        </li>
+                                        <li class="product-card">
+                                            <img src="https://cdn.tgdd.vn/Products/Images/54/316448/tai-nghe-bluetooth-true-wireless-samsung-galaxy-buds-fe-r400n-290224-051438-600x600.jpg"
+                                                alt="">
+                                            <h3 class="name">Samsung Galaxy A56 5G</h3>
+
+                                            <div class="price">10.680.000đ</div>
+                                            <div class="old-price">11.780.000đ</div>
+
+                                            <div class="status">🔥 Còn 12/20 suất</div>
+                                            <a class="buy-btn">Mua ngay</a>
+                                        </li>
+                                        <li class="product-card">
+                                            <img src="https://cdn.tgdd.vn/Products/Images/7264/199514/casio-a168wg-9wdf-vang-thumb-600x600.jpg"
+                                                alt="">
+                                            <h3 class="name">Samsung Galaxy A56 5G</h3>
+
+                                            <div class="price">10.680.000đ</div>
+                                            <div class="old-price">11.780.000đ</div>
+
+                                            <div class="status">🔥 Còn 12/20 suất</div>
+                                            <a class="buy-btn">Mua ngay</a>
+                                        </li>
+                                        <li class="product-card">
+                                            <img src="https://cdn.tgdd.vn/Products/Images/42/339243/honor-400-vang-thumbn-600x600.jpg"
+                                                alt="">
+                                            <h3 class="name">Samsung Galaxy A56 5G</h3>
+
+                                            <div class="price">10.680.000đ</div>
+                                            <div class="old-price">11.780.000đ</div>
+
+                                            <div class="status">🔥 Còn 12/20 suất</div>
+                                            <a class="buy-btn">Mua ngay</a>
+                                        </li>
+                                        <li class="product-card">
+                                            <img src="https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/60/355682/op-lung-magsafe-iphone-air-nhua-polycarbonate-apple-beats-thumb-1-638943217888770055-600x600.jpg"
+                                                alt="">
+                                            <h3 class="name">Samsung Galaxy A56 5G</h3>
+
+                                            <div class="price">10.680.000đ</div>
+                                            <div class="old-price">11.780.000đ</div>
+
+                                            <div class="status">🔥 Còn 12/20 suất</div>
+                                            <a class="buy-btn">Mua ngay</a>
+                                        </li>
+                                        <li class="product-card">
+                                            <img src="https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/339683/asus-vivobook-14-x1404va-core-5-eb155ws-638895760599785280-600x600.jpg"
+                                                alt="">
+                                            <h3 class="name">Samsung Galaxy A56 5G</h3>
+
+                                            <div class="price">10.680.000đ</div>
+                                            <div class="old-price">11.780.000đ</div>
+
+                                            <div class="status">🔥 Còn 12/20 suất</div>
+                                            <a class="buy-btn">Mua ngay</a>
+                                        </li>
+                                        <li class="product-card">
+                                            <img src="https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/4728/319451/camera-ip-360-do-3mp-botslab-c212-thumb-1-638665854259627368-600x600.jpg"
+                                                alt="">
+                                            <h3 class="name">Samsung Galaxy A56 5G</h3>
+
+                                            <div class="price">10.680.000đ</div>
+                                            <div class="old-price">11.780.000đ</div>
+
+                                            <div class="status">🔥 Còn 12/20 suất</div>
+                                            <a class="buy-btn">Mua ngay</a>
+                                        </li>
+                                        <li class="product-card">
+                                            <img src="https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/7264/333700/casio-ca-53wpc-1bdr-unisex-thumb-638727234860930764-600x600.jpg"
+                                                alt="">
+                                            <h3 class="name">Samsung Galaxy A56 5G</h3>
+
+                                            <div class="price">10.680.000đ</div>
+                                            <div class="old-price">11.780.000đ</div>
+
+                                            <div class="status">🔥 Còn 12/20 suất</div>
+                                            <a class="buy-btn">Mua ngay</a>
+                                        </li>
+                                        <li class="product-card">
+                                            <img src="https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/42/341837/tecno-spark-go-2-xanh-thumb-638899027806878098-600x600.jpg"
+                                                alt="">
+                                            <h3 class="name">Samsung Galaxy A56 5G</h3>
+
+                                            <div class="price">10.680.000đ</div>
+                                            <div class="old-price">11.780.000đ</div>
+
+                                            <div class="status">🔥 Còn 12/20 suất</div>
+                                            <a class="buy-btn">Mua ngay</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- PAGE 3 -->
+                            <div class="promo-page">
+                                <div class="promo-page-inner">
+                                    <ul class="product-grid">
+                                        <!-- 12 product-card -->
+                                        <li class="product-card">
+                                            <img src="https://cdn.tgdd.vn/Products/Images/42/334932/samsung-galaxy-a56-5g-gray-thumb-1-600x600.jpg"
+                                                alt="">
+                                            <h3 class="name">Samsung Galaxy A56 5G</h3>
+
+                                            <div class="price">10.680.000đ</div>
+                                            <div class="old-price">11.780.000đ</div>
+
+                                            <div class="status">🔥 Còn 12/20 suất</div>
+                                            <a class="buy-btn">Mua ngay</a>
+                                        </li>
+                                        <li class="product-card">
+                                            <img src="https://cdn.tgdd.vn/Products/Images/42/342679/iphone-17-pro-max-cam-thumb-600x600.jpg"
+                                                alt="">
+                                            <h3 class="name">Samsung Galaxy A56 5G</h3>
+
+                                            <div class="price">10.680.000đ</div>
+                                            <div class="old-price">11.780.000đ</div>
+
+                                            <div class="status">🔥 Còn 12/20 suất</div>
+                                            <a class="buy-btn">Mua ngay</a>
+                                        </li>
+                                        <li class="product-card">
+                                            <img src="https://cdn.tgdd.vn/Products/Images/54/315014/tai-nghe-bluetooth-airpods-pro-2nd-gen-usb-c-charge-apple-thumb-1-600x600.jpg"
+                                                alt="">
+                                            <h3 class="name">Samsung Galaxy A56 5G</h3>
+
+                                            <div class="price">10.680.000đ</div>
+                                            <div class="old-price">11.780.000đ</div>
+
+                                            <div class="status">🔥 Còn 12/20 suất</div>
+                                            <a class="buy-btn">Mua ngay</a>
+                                        </li>
+                                        <li class="product-card">
+                                            <img src="https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/5693/328640/hprt-ft800-bluetooth-trang-thumb-new-638628790532210323-600x600.jpg"
+                                                alt="">
+                                            <h3 class="name">Samsung Galaxy A56 5G</h3>
+
+                                            <div class="price">10.680.000đ</div>
+                                            <div class="old-price">11.780.000đ</div>
+
+                                            <div class="status">🔥 Còn 12/20 suất</div>
+                                            <a class="buy-btn">Mua ngay</a>
+                                        </li>
+                                        <li class="product-card">
+                                            <img src="https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/2162/326061/loa-bluetooth-jbl-partybox-120-120625-042754-510-600x600.jpg"
+                                                alt="">
+                                            <h3 class="name">Samsung Galaxy A56 5G</h3>
+
+                                            <div class="price">10.680.000đ</div>
+                                            <div class="old-price">11.780.000đ</div>
+
+                                            <div class="status">🔥 Còn 12/20 suất</div>
+                                            <a class="buy-btn">Mua ngay</a>
+                                        </li>
+                                        <li class="product-card">
+                                            <img src="https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/7264/328194/edifice-casio-efv-c120d-3adf-nam-thumb-638926899969981955-600x600.jpg"
+                                                alt="">
+                                            <h3 class="name">Samsung Galaxy A56 5G</h3>
+
+                                            <div class="price">10.680.000đ</div>
+                                            <div class="old-price">11.780.000đ</div>
+
+                                            <div class="status">🔥 Còn 12/20 suất</div>
+                                            <a class="buy-btn">Mua ngay</a>
+                                        </li>
+                                        <li class="product-card">
+                                            <img src="https://cdn.tgdd.vn/Products/Images/42/343066/realme-15-5g-thumb-600x600.jpg"
+                                                alt="">
+                                            <h3 class="name">Samsung Galaxy A56 5G</h3>
+
+                                            <div class="price">10.680.000đ</div>
+                                            <div class="old-price">11.780.000đ</div>
+
+                                            <div class="status">🔥 Còn 12/20 suất</div>
+                                            <a class="buy-btn">Mua ngay</a>
+                                        </li>
+                                        <li class="product-card">
+                                            <img src="https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/358093/macbook-pro-14-inch-nano-m5-16gb-512gb-den-638962956060321611-600x600.jpg"
+                                                alt="">
+                                            <h3 class="name">Samsung Galaxy A56 5G</h3>
+
+                                            <div class="price">10.680.000đ</div>
+                                            <div class="old-price">11.780.000đ</div>
+
+                                            <div class="status">🔥 Còn 12/20 suất</div>
+                                            <a class="buy-btn">Mua ngay</a>
+                                        </li>
+                                        <li class="product-card">
+                                            <img src="https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/327406/hp-probook-450-g10-i5-9h1n5pt-170225-110838-638-600x600.jpg"
+                                                alt="">
+                                            <h3 class="name">Samsung Galaxy A56 5G</h3>
+
+                                            <div class="price">10.680.000đ</div>
+                                            <div class="old-price">11.780.000đ</div>
+
+                                            <div class="status">🔥 Còn 12/20 suất</div>
+                                            <a class="buy-btn">Mua ngay</a>
+                                        </li>
+                                        <li class="product-card">
+                                            <img src="https://cdn.tgdd.vn/Products/Images/54/325122/tai-nghe-bluetooth-true-wireless-ava-buds-life-air-3-600x600.jpg"
+                                                alt="">
+                                            <h3 class="name">Samsung Galaxy A56 5G</h3>
+
+                                            <div class="price">10.680.000đ</div>
+                                            <div class="old-price">11.780.000đ</div>
+
+                                            <div class="status">🔥 Còn 12/20 suất</div>
+                                            <a class="buy-btn">Mua ngay</a>
+                                        </li>
+                                        <li class="product-card">
+                                            <img src="https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/7264/332290/elio-el157-01-nu-thumb-638684010005546537-600x600.jpg"
+                                                alt="">
+                                            <h3 class="name">Samsung Galaxy A56 5G</h3>
+
+                                            <div class="price">10.680.000đ</div>
+                                            <div class="old-price">11.780.000đ</div>
+
+                                            <div class="status">🔥 Còn 12/20 suất</div>
+                                            <a class="buy-btn">Mua ngay</a>
+                                        </li>
+                                        <li class="product-card">
+                                            <img src="https://cdn.tgdd.vn/Products/Images/42/326023/vivo-y28-xanh-thumbn-600x600.jpg"
+                                                alt="">
+                                            <h3 class="name">Samsung Galaxy A56 5G</h3>
+
+                                            <div class="price">10.680.000đ</div>
+                                            <div class="old-price">11.780.000đ</div>
+
+                                            <div class="status">🔥 Còn 12/20 suất</div>
+                                            <a class="buy-btn">Mua ngay</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- PAGE 4 -->
+                            <div class="promo-page">
+                                <div class="promo-page-inner">
+                                    <ul class="product-grid">
+                                        <!-- 12 product-card -->
+                                        <li class="product-card">
+                                            <img src="https://cdn.tgdd.vn/Products/Images/42/335638/xiaomi-redmi-13x-blue-thumbn-600x600.jpg"
+                                                alt="">
+                                            <h3 class="name">Samsung Galaxy A56 5G</h3>
+
+                                            <div class="price">10.680.000đ</div>
+                                            <div class="old-price">11.780.000đ</div>
+
+                                            <div class="status">🔥 Còn 12/20 suất</div>
+                                            <a class="buy-btn">Mua ngay</a>
+                                        </li>
+                                        <li class="product-card">
+                                            <img src="https://cdn.tgdd.vn/Products/Images/42/329149/iphone-16-pro-max-sa-mac-thumb-1-600x600.jpg"
+                                                alt="">
+                                            <h3 class="name">Samsung Galaxy A56 5G</h3>
+
+                                            <div class="price">10.680.000đ</div>
+                                            <div class="old-price">11.780.000đ</div>
+
+                                            <div class="status">🔥 Còn 12/20 suất</div>
+                                            <a class="buy-btn">Mua ngay</a>
+                                        </li>
+                                        <li class="product-card">
+                                            <img src="https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/5698/331493/mac-mini-m4-16gb-256gb-bac-mu9d3sa-a-thumb-10-638659156982590429-600x600.jpg"
+                                                alt="">
+                                            <h3 class="name">Samsung Galaxy A56 5G</h3>
+
+                                            <div class="price">10.680.000đ</div>
+                                            <div class="old-price">11.780.000đ</div>
+
+                                            <div class="status">🔥 Còn 12/20 suất</div>
+                                            <a class="buy-btn">Mua ngay</a>
+                                        </li>
+                                        <li class="product-card">
+                                            <img src="https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/5698/335812/asus-v500mv-i5-13420h-8gb-512gb-den-1-638779170202381589-600x600.jpg"
+                                                alt="">
+                                            <h3 class="name">Samsung Galaxy A56 5G</h3>
+
+                                            <div class="price">10.680.000đ</div>
+                                            <div class="old-price">11.780.000đ</div>
+
+                                            <div class="status">🔥 Còn 12/20 suất</div>
+                                            <a class="buy-btn">Mua ngay</a>
+                                        </li>
+                                        <li class="product-card">
+                                            <img src="https://cdn.tgdd.vn/Products/Images/54/316448/tai-nghe-bluetooth-true-wireless-samsung-galaxy-buds-fe-r400n-290224-051438-600x600.jpg"
+                                                alt="">
+                                            <h3 class="name">Samsung Galaxy A56 5G</h3>
+
+                                            <div class="price">10.680.000đ</div>
+                                            <div class="old-price">11.780.000đ</div>
+
+                                            <div class="status">🔥 Còn 12/20 suất</div>
+                                            <a class="buy-btn">Mua ngay</a>
+                                        </li>
+                                        <li class="product-card">
+                                            <img src="https://cdn.tgdd.vn/Products/Images/7264/199514/casio-a168wg-9wdf-vang-thumb-600x600.jpg"
+                                                alt="">
+                                            <h3 class="name">Samsung Galaxy A56 5G</h3>
+
+                                            <div class="price">10.680.000đ</div>
+                                            <div class="old-price">11.780.000đ</div>
+
+                                            <div class="status">🔥 Còn 12/20 suất</div>
+                                            <a class="buy-btn">Mua ngay</a>
+                                        </li>
+                                        <li class="product-card">
+                                            <img src="https://cdn.tgdd.vn/Products/Images/42/339243/honor-400-vang-thumbn-600x600.jpg"
+                                                alt="">
+                                            <h3 class="name">Samsung Galaxy A56 5G</h3>
+
+                                            <div class="price">10.680.000đ</div>
+                                            <div class="old-price">11.780.000đ</div>
+
+                                            <div class="status">🔥 Còn 12/20 suất</div>
+                                            <a class="buy-btn">Mua ngay</a>
+                                        </li>
+                                        <li class="product-card">
+                                            <img src="https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/60/355682/op-lung-magsafe-iphone-air-nhua-polycarbonate-apple-beats-thumb-1-638943217888770055-600x600.jpg"
+                                                alt="">
+                                            <h3 class="name">Samsung Galaxy A56 5G</h3>
+
+                                            <div class="price">10.680.000đ</div>
+                                            <div class="old-price">11.780.000đ</div>
+
+                                            <div class="status">🔥 Còn 12/20 suất</div>
+                                            <a class="buy-btn">Mua ngay</a>
+                                        </li>
+                                        <li class="product-card">
+                                            <img src="https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/339683/asus-vivobook-14-x1404va-core-5-eb155ws-638895760599785280-600x600.jpg"
+                                                alt="">
+                                            <h3 class="name">Samsung Galaxy A56 5G</h3>
+
+                                            <div class="price">10.680.000đ</div>
+                                            <div class="old-price">11.780.000đ</div>
+
+                                            <div class="status">🔥 Còn 12/20 suất</div>
+                                            <a class="buy-btn">Mua ngay</a>
+                                        </li>
+                                        <li class="product-card">
+                                            <img src="https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/4728/319451/camera-ip-360-do-3mp-botslab-c212-thumb-1-638665854259627368-600x600.jpg"
+                                                alt="">
+                                            <h3 class="name">Samsung Galaxy A56 5G</h3>
+
+                                            <div class="price">10.680.000đ</div>
+                                            <div class="old-price">11.780.000đ</div>
+
+                                            <div class="status">🔥 Còn 12/20 suất</div>
+                                            <a class="buy-btn">Mua ngay</a>
+                                        </li>
+                                        <li class="product-card">
+                                            <img src="https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/7264/333700/casio-ca-53wpc-1bdr-unisex-thumb-638727234860930764-600x600.jpg"
+                                                alt="">
+                                            <h3 class="name">Samsung Galaxy A56 5G</h3>
+
+                                            <div class="price">10.680.000đ</div>
+                                            <div class="old-price">11.780.000đ</div>
+
+                                            <div class="status">🔥 Còn 12/20 suất</div>
+                                            <a class="buy-btn">Mua ngay</a>
+                                        </li>
+                                        <li class="product-card">
+                                            <img src="https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/42/341837/tecno-spark-go-2-xanh-thumb-638899027806878098-600x600.jpg"
+                                                alt="">
+                                            <h3 class="name">Samsung Galaxy A56 5G</h3>
+
+                                            <div class="price">10.680.000đ</div>
+                                            <div class="old-price">11.780.000đ</div>
+
+                                            <div class="status">🔥 Còn 12/20 suất</div>
+                                            <a class="buy-btn">Mua ngay</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="extra-btn">Xem thêm sản phẩm ❯</div>
+                </div>
+            </div>
+
+            <div class="online-shopping">
+                <div class="online-header">
+                    <div class="online-title">
+                        <i class="icon-star"></i>
+                        <h3 class="txt-yellow">Mua Online - Hàng chuẩn, giá mê</h3>
+                    </div>
+                </div>
+
+                <div class="online-container">
+                    <div class="online-card">
+                        <img src="https://cdnv2.tgdd.vn/mwg-static/common/Campaign/24/1e/241e7e511129111d063279bb1440269b.gif"
+                            alt="Lì xì">
+                        <p class="desc">Sắp tết lì xì to</p>
+                    </div>
+                    <div class="online-card">
+                        <img src="https://cdnv2.tgdd.vn/mwg-static/common/Campaign/68/40/6840165e9f25814b0038e9e3583287ac.png"
+                            alt="Tai nghe">
+                        <p class="desc">Bật nhạc cực đã
+                            Ưu đãi 40%+
+                        </p>
+                    </div>
+                    <div class="online-card">
+                        <img src="https://cdnv2.tgdd.vn/mwg-static/common/Campaign/ca/65/ca65209607da17dcbb93c045d864a87d.png"
+                            alt="Dekey">
+                        <p class="desc">Chạm là khác
+                            Khám phá Dekey
+                        </p>
+                    </div>
+                    <div class="online-card">
+                        <img src="	https://cdnv2.tgdd.vn/mwg-static/common/Campaign/d7/ed/d7edb9fdd12a7914dc4645f43483599f.png"
+                            alt="Phụ Kiện">
+                        <p class="desc">Phụ kiện chuẩn gu
+                            Mua ngay!
+                        </p>
+                    </div>
+                    <div class="online-card">
+                        <img src="https://cdnv2.tgdd.vn/mwg-static/common/Campaign/c1/90/c190499f303f5c2ca9c35a223e5c4713.png"
+                            alt="Công nghệ">
+                        <p class="desc">Chuẩn công nghệ
+                            Sale đến 50%+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="suggest-section">
+                <div class="suggest-header">
+                    <div class="suggest-title">
+                        <i class="icon-star"></i>
+                        <h3 class="txt-yellow">Gợi ý cho bạn</h3>
+                    </div>
+                </div>
+                <ul class="suggest-grid">
+                    <!-- CARD -->
+                    <li class="suggest-card">
+                        <span class="card-badge">Trả chậm 0% trả trước 0đ</span>
+
+                        <img src="https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/340562/dell-15-dc15250-i7-dc5i7748w1-638900114799182560-600x600.jpg"
+                            alt="">
+
+                        <h3 class="name">iPhone 16 Pro Max 256GB</h3>
+
+                        <div class="price">31.990.000đ</div>
+                        <div class="old-price">33.990.000đ</div>
+
+                        <div class="rating">⭐ 4.9 · Đã bán 315,8k</div>
+                    </li>
+                    <li class="suggest-card">
+                        <span class="card-badge">Trả chậm 0% trả trước 0đ</span>
+
+                        <img src="https://cdn.tgdd.vn/Products/Images/42/337847/dien-thoai-oppo-a5x-white-thumb-600x600.jpg"
+                            alt="">
+
+                        <h3 class="name">iPhone 16 Pro Max 256GB</h3>
+
+                        <div class="price">31.990.000đ</div>
+                        <div class="old-price">33.990.000đ</div>
+
+                        <div class="rating">⭐ 4.9 · Đã bán 315,8k</div>
+                    </li>
+                    <li class="suggest-card">
+                        <span class="card-badge">Trả chậm 0% trả trước 0đ</span>
+
+                        <img src="https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/311178/asus-vivobook-go-15-e1504fa-r5-nj776w-140225-100949-251-600x600.jpg"
+                            alt="">
+
+                        <h3 class="name">iPhone 16 Pro Max 256GB</h3>
+
+                        <div class="price">31.990.000đ</div>
+                        <div class="old-price">33.990.000đ</div>
+
+                        <div class="rating">⭐ 4.9 · Đã bán 315,8k</div>
+                    </li>
+                    <li class="suggest-card">
+                        <span class="card-badge">Trả chậm 0% trả trước 0đ</span>
+
+                        <img src="https://cdn.tgdd.vn/Products/Images/42/337846/dien-thoai-oppo-a5x-blue-thumb-600x600.jpg"
+                            alt="">
+
+                        <h3 class="name">iPhone 16 Pro Max 256GB</h3>
+
+                        <div class="price">31.990.000đ</div>
+                        <div class="old-price">33.990.000đ</div>
+
+                        <div class="rating">⭐ 4.9 · Đã bán 315,8k</div>
+                    </li>
+                    <li class="suggest-card">
+                        <span class="card-badge">Trả chậm 0% trả trước 0đ</span>
+
+                        <img src="https://cdn.tgdd.vn/Products/Images/7077/344767/apple-watch-se-3-gps-vien-nhom-day-the-thao-trang-tb-600x600.jpg"
+                            alt="">
+
+                        <h3 class="name">iPhone 16 Pro Max 256GB</h3>
+
+                        <div class="price">31.990.000đ</div>
+                        <div class="old-price">33.990.000đ</div>
+
+                        <div class="rating">⭐ 4.9 · Đã bán 315,8k</div>
+                    </li>
+                    <li class="suggest-card">
+                        <span class="card-badge">Trả chậm 0% trả trước 0đ</span>
+
+                        <img src="https://cdn.tgdd.vn/Products/Images/7077/332069/xiaomi-redmi-watch-5-bac-tb-1-600x600.jpg"
+                            alt="">
+
+                        <h3 class="name">iPhone 16 Pro Max 256GB</h3>
+
+                        <div class="price">31.990.000đ</div>
+                        <div class="old-price">33.990.000đ</div>
+
+                        <div class="rating">⭐ 4.9 · Đã bán 315,8k</div>
+                    </li>
+                    <li class="suggest-card">
+                        <span class="card-badge">Trả chậm 0% trả trước 0đ</span>
+
+                        <img src="https://cdn.tgdd.vn/Products/Images/522/343062/samsung-galaxy-tab-s10-lite-wifi-6gb-128gb-bac-600x600.jpg"
+                            alt="">
+
+                        <h3 class="name">iPhone 16 Pro Max 256GB</h3>
+
+                        <div class="price">31.990.000đ</div>
+                        <div class="old-price">33.990.000đ</div>
+
+                        <div class="rating">⭐ 4.9 · Đã bán 315,8k</div>
+                    </li>
+                    <li class="suggest-card">
+                        <span class="card-badge">Trả chậm 0% trả trước 0đ</span>
+
+                        <img src="https://cdn.tgdd.vn/Products/Images/522/343061/samsung-galaxy-tab-s10-lite-5g-6gb-128gb-xam-600x600.jpg"
+                            alt="">
+
+                        <h3 class="name">iPhone 16 Pro Max 256GB</h3>
+
+                        <div class="price">31.990.000đ</div>
+                        <div class="old-price">33.990.000đ</div>
+
+                        <div class="rating">⭐ 4.9 · Đã bán 315,8k</div>
+                    </li>
+                    <li class="suggest-card">
+                        <span class="card-badge">Trả chậm 0% trả trước 0đ</span>
+
+                        <img src="https://cdn.tgdd.vn/Products/Images/42/344651/oppo-a6-pro-4g-pink-thumbai-600x600.jpg"
+                            alt="">
+
+                        <h3 class="name">iPhone 16 Pro Max 256GB</h3>
+
+                        <div class="price">31.990.000đ</div>
+                        <div class="old-price">33.990.000đ</div>
+
+                        <div class="rating">⭐ 4.9 · Đã bán 315,8k</div>
+                    </li>
+                    <li class="suggest-card">
+                        <span class="card-badge">Trả chậm 0% trả trước 0đ</span>
+
+                        <img src="https://cdn.tgdd.vn/Products/Images/7077/358003/dong-ho-dinh-vi-tre-em-kidcare-sight-s25-den-thumb-600x600.jpg"
+                            alt="">
+
+                        <h3 class="name">iPhone 16 Pro Max 256GB</h3>
+
+                        <div class="price">31.990.000đ</div>
+                        <div class="old-price">33.990.000đ</div>
+
+                        <div class="rating">⭐ 4.9 · Đã bán 315,8k</div>
+                    </li>
+                    <li class="suggest-card">
+                        <span class="card-badge">Trả chậm 0% trả trước 0đ</span>
+
+                        <img src="https://cdn.tgdd.vn/Products/Images/7077/326906/masstel-smart-hero-6-xanh-tb-1-600x600.jpg"
+                            alt="">
+
+                        <h3 class="name">iPhone 16 Pro Max 256GB</h3>
+
+                        <div class="price">31.990.000đ</div>
+                        <div class="old-price">33.990.000đ</div>
+
+                        <div class="rating">⭐ 4.9 · Đã bán 315,8k</div>
+                    </li>
+                    <li class="suggest-card">
+                        <span class="card-badge">Trả chậm 0% trả trước 0đ</span>
+
+                        <img src="https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/327098/hp-15-fc0085au-r5-a6vv8pa-170225-110652-878-600x600.jpg"
+                            alt="">
+
+                        <h3 class="name">iPhone 16 Pro Max 256GB</h3>
+
+                        <div class="price">31.990.000đ</div>
+                        <div class="old-price">33.990.000đ</div>
+
+                        <div class="rating">⭐ 4.9 · Đã bán 315,8k</div>
+                    </li>
+                    <li class="suggest-card">
+                        <span class="card-badge">Trả chậm 0% trả trước 0đ</span>
+
+                        <img src="https://cdn.tgdd.vn/Products/Images/7077/358003/dong-ho-dinh-vi-tre-em-kidcare-sight-s25-den-thumb-600x600.jpg"
+                            alt="">
+
+                        <h3 class="name">iPhone 16 Pro Max 256GB</h3>
+
+                        <div class="price">31.990.000đ</div>
+                        <div class="old-price">33.990.000đ</div>
+
+                        <div class="rating">⭐ 4.9 · Đã bán 315,8k</div>
+                    </li>
+                    <li class="suggest-card">
+                        <span class="card-badge">Trả chậm 0% trả trước 0đ</span>
+
+                        <img src="https://cdn.tgdd.vn/Products/Images/522/356856/xiaomi-redmi-pad-2-pro-purple-thumb-600x600.jpg"
+                            alt="">
+
+                        <h3 class="name">iPhone 16 Pro Max 256GB</h3>
+
+                        <div class="price">31.990.000đ</div>
+                        <div class="old-price">33.990.000đ</div>
+
+                        <div class="rating">⭐ 4.9 · Đã bán 315,8k</div>
+                    </li>
+                    <li class="suggest-card">
+                        <span class="card-badge">Trả chậm 0% trả trước 0đ</span>
+
+                        <img src="https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/334999/acer-aspire-lite-15-al15-41p-r3ql-r7-nxj54sv001-thumb-638828183898800384-600x600.jpg"
+                            alt="">
+
+                        <h3 class="name">iPhone 16 Pro Max 256GB</h3>
+
+                        <div class="price">31.990.000đ</div>
+                        <div class="old-price">33.990.000đ</div>
+
+                        <div class="rating">⭐ 4.9 · Đã bán 315,8k</div>
+                    </li>
+                    <li class="suggest-card">
+                        <span class="card-badge">Trả chậm 0% trả trước 0đ</span>
+
+                        <img src="https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/325500/lenovo-ideapad-slim-3-15amn8-r5-82xq00j0vn-thumb-638754862828598408-600x600.jpg"
+                            alt="">
+
+                        <h3 class="name">iPhone 16 Pro Max 256GB</h3>
+
+                        <div class="price">31.990.000đ</div>
+                        <div class="old-price">33.990.000đ</div>
+
+                        <div class="rating">⭐ 4.9 · Đã bán 315,8k</div>
+                    </li>
+                    <li class="suggest-card">
+                        <span class="card-badge">Trả chậm 0% trả trước 0đ</span>
+
+                        <img src="https://cdn.tgdd.vn/Products/Images/7077/332069/xiaomi-redmi-watch-5-bac-tb-1-600x600.jpg"
+                            alt="">
+
+                        <h3 class="name">iPhone 16 Pro Max 256GB</h3>
+
+                        <div class="price">31.990.000đ</div>
+                        <div class="old-price">33.990.000đ</div>
+
+                        <div class="rating">⭐ 4.9 · Đã bán 315,8k</div>
+                    </li>
+                    <li class="suggest-card">
+                        <span class="card-badge">Trả chậm 0% trả trước 0đ</span>
+
+                        <img src="https://cdn.tgdd.vn/Products/Images/522/339206/xiaomi-redmi-pad-2-gray-thumb-600x600.jpg"
+                            alt="">
+
+                        <h3 class="name">iPhone 16 Pro Max 256GB</h3>
+
+                        <div class="price">31.990.000đ</div>
+                        <div class="old-price">33.990.000đ</div>
+
+                        <div class="rating">⭐ 4.9 · Đã bán 315,8k</div>
+                    </li>
+                    <li class="suggest-card">
+                        <span class="card-badge">Trả chậm 0% trả trước 0đ</span>
+
+                        <img src="https://cdn.tgdd.vn/Products/Images/522/345547/TimerThumb/samsung-galaxy-tab-a11-wifi-4gb-64gb-xam.jpg"
+                            alt="">
+
+                        <h3 class="name">iPhone 16 Pro Max 256GB</h3>
+
+                        <div class="price">31.990.000đ</div>
+                        <div class="old-price">33.990.000đ</div>
+
+                        <div class="rating">⭐ 4.9 · Đã bán 315,8k</div>
+                    </li>
+                    <li class="suggest-card">
+                        <span class="card-badge">Trả chậm 0% trả trước 0đ</span>
+
+                        <img src="https://cdn.tgdd.vn/Products/Images/7077/358003/dong-ho-dinh-vi-tre-em-kidcare-sight-s25-den-thumb-600x600.jpg"
+                            alt="">
+
+                        <h3 class="name">iPhone 16 Pro Max 256GB</h3>
+
+                        <div class="price">31.990.000đ</div>
+                        <div class="old-price">33.990.000đ</div>
+
+                        <div class="rating">⭐ 4.9 · Đã bán 315,8k</div>
+                    </li>
+                    <li class="suggest-card">
+                        <span class="card-badge">Trả chậm 0% trả trước 0đ</span>
+
+                        <img src="https://cdn.tgdd.vn/Products/Images/42/341804/samsung-galaxy-a07-black-thumbnew-600x600.jpg"
+                            alt="">
+
+                        <h3 class="name">iPhone 16 Pro Max 256GB</h3>
+
+                        <div class="price">31.990.000đ</div>
+                        <div class="old-price">33.990.000đ</div>
+
+                        <div class="rating">⭐ 4.9 · Đã bán 315,8k</div>
+                    </li>
+                    <li class="suggest-card">
+                        <span class="card-badge">Trả chậm 0% trả trước 0đ</span>
+
+                        <img src="https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/338324/asus-k3605vc-i5-rp364w-thumb-638839519987207839-600x600.jpg"
+                            alt="">
+
+                        <h3 class="name">iPhone 16 Pro Max 256GB</h3>
+
+                        <div class="price">31.990.000đ</div>
+                        <div class="old-price">33.990.000đ</div>
+
+                        <div class="rating">⭐ 4.9 · Đã bán 315,8k</div>
+                    </li>
+                    <li class="suggest-card">
+                        <span class="card-badge">Trả chậm 0% trả trước 0đ</span>
+
+                        <img src="https://cdn.tgdd.vn/Products/Images/522/339207/xiaomi-redmi-pad-2-4g-green-thumb-600x600.jpg"
+                            alt="">
+
+                        <h3 class="name">iPhone 16 Pro Max 256GB</h3>
+
+                        <div class="price">31.990.000đ</div>
+                        <div class="old-price">33.990.000đ</div>
+
+                        <div class="rating">⭐ 4.9 · Đã bán 315,8k</div>
+                    </li>
+                    <li class="suggest-card">
+                        <span class="card-badge">Trả chậm 0% trả trước 0đ</span>
+
+                        <img src="https://cdn.tgdd.vn/Products/Images/522/335308/ipad-11-wifi-yellow-thumb-600x600.jpg"
+                            alt="">
+
+                        <h3 class="name">iPhone 16 Pro Max 256GB</h3>
+
+                        <div class="price">31.990.000đ</div>
+                        <div class="old-price">33.990.000đ</div>
+
+                        <div class="rating">⭐ 4.9 · Đã bán 315,8k</div>
+                    </li>
+                </ul>
+
+                <div class="suggest-more">
+                    <button class="btn-more" type="button">
+                        Xem thêm 12 sản phẩm <span class="arrow">▾</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-section">
+                <div class="product-header">
+                    <div class="product-title">
+                        <i class="icon-star"></i>
+                        <h3 class="txt-yellow">Lễ Hội Trả Chậm</h3>
+                    </div>
+                </div>
+
+                <div class="product-content">
+                    <!-- BANNER LEFT -->
+                    <div class="promo-banner">
+                        <img src="https://cdnv2.tgdd.vn/mwg-static/tgdd/Banner/a5/40/a5404e2e81d6dc9055aee4b3837eff58.jpg"
+                            alt="Lễ hội trả chậm">
+                    </div>
+
+                    <div class="promo-products">
+                        <button class="control prev" data-installment-prev>❮</button>
+
+                        <div class="promo-viewport">
+                            <ul class="installment-track">
+                                <!-- page 1 -->
+                                <li class="installment-page">
+                                    <div class="promo-card">
+                                        <span class="tag">Trả chậm 0% trả trước 0đ</span>
+                                        <img src="https://cdn.tgdd.vn/Products/Images/42/334227/vivo-y29-trang-thumb-600x600.jpg"
+                                            alt="">
+                                        <h3 class="name">Samsung Galaxy S25 FE 5G 8GB/256GB</h3>
+                                        <div class="price">16.990.000đ</div>
+                                        <div class="old-price">18.490.000đ</div>
+                                        <div class="rating">⭐ 4.9 · Đã bán 11,3k</div>
+                                    </div>
+                                    <div class="promo-card">
+                                        <span class="tag">Trả chậm 0% trả trước 0đ</span>
+                                        <img src="https://cdn.tgdd.vn/Products/Images/42/343065/realme-15-5g-pink-thumb-600x600.jpg"
+                                            alt="">
+                                        <h3 class="name">Samsung Galaxy S25 FE 5G 8GB/256GB</h3>
+                                        <div class="price">16.990.000đ</div>
+                                        <div class="old-price">18.490.000đ</div>
+                                        <div class="rating">⭐ 4.9 · Đã bán 11,3k</div>
+                                    </div>
+                                    <div class="promo-card">
+                                        <span class="tag">Trả chậm 0% trả trước 0đ</span>
+                                        <img src="https://cdn.tgdd.vn/Products/Images/42/358687/honor-x9d-5g-do-thumb-600x600.jpg"
+                                            alt="">
+                                        <h3 class="name">Samsung Galaxy S25 FE 5G 8GB/256GB</h3>
+                                        <div class="price">16.990.000đ</div>
+                                        <div class="old-price">18.490.000đ</div>
+                                        <div class="rating">⭐ 4.9 · Đã bán 11,3k</div>
+                                    </div>
+                                    <div class="promo-card">
+                                        <span class="tag">Trả chậm 0% trả trước 0đ</span>
+                                        <img src="https://cdn.tgdd.vn/2026/01/timerseo/358225-600x600-1.jpg" alt="">
+                                        <h3 class="name">Samsung Galaxy S25 FE 5G 8GB/256GB</h3>
+                                        <div class="price">16.990.000đ</div>
+                                        <div class="old-price">18.490.000đ</div>
+                                        <div class="rating">⭐ 4.9 · Đã bán 11,3k</div>
+                                    </div>
+                                </li>
+
+                                <!-- page 2 -->
+                                <li class="installment-page">
+                                    <div class="promo-card">
+                                        <span class="tag">Trả chậm 0% trả trước 0đ</span>
+                                        <img src="https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/44/333427/acer-nitro-v-15-anv15-41-r1jy-r5-nhqpfsv001-thumb-638760100059925740-600x600.jpg"
+                                            alt="">
+                                        <h3 class="name">Samsung Galaxy S25 FE 5G 8GB/256GB</h3>
+                                        <div class="price">16.990.000đ</div>
+                                        <div class="old-price">18.490.000đ</div>
+                                        <div class="rating">⭐ 4.9 · Đã bán 11,3k</div>
+                                    </div>
+                                    <div class="promo-card">
+                                        <span class="tag">Trả chậm 0% trả trước 0đ</span>
+                                        <img src="https://cdn.tgdd.vn/Products/Images/7077/332069/xiaomi-redmi-watch-5-bac-tb-1-600x600.jpg"
+                                            alt="">
+                                        <h3 class="name">Samsung Galaxy S25 FE 5G 8GB/256GB</h3>
+                                        <div class="price">16.990.000đ</div>
+                                        <div class="old-price">18.490.000đ</div>
+                                        <div class="rating">⭐ 4.9 · Đã bán 11,3k</div>
+                                    </div>
+                                    <div class="promo-card">
+                                        <span class="tag">Trả chậm 0% trả trước 0đ</span>
+                                        <img src="https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/7264/358742/casio-gma-p2110-4adr-nu-thumb-638981277816183093-600x600.jpg"
+                                            alt="">
+                                        <h3 class="name">Samsung Galaxy S25 FE 5G 8GB/256GB</h3>
+                                        <div class="price">16.990.000đ</div>
+                                        <div class="old-price">18.490.000đ</div>
+                                        <div class="rating">⭐ 4.9 · Đã bán 11,3k</div>
+                                    </div>
+                                    <div class="promo-card">
+                                        <span class="tag">Trả chậm 0% trả trước 0đ</span>
+                                        <img src="https://cdnv2.tgdd.vn/mwg-static/tgdd/Products/Images/2162/356828/loa-bluetooth-harman-kardon-aura-studio-5-thumb-638973289182305670-600x600.jpg"
+                                            alt="">
+                                        <h3 class="name">Samsung Galaxy S25 FE 5G 8GB/256GB</h3>
+                                        <div class="price">16.990.000đ</div>
+                                        <div class="old-price">18.490.000đ</div>
+                                        <div class="rating">⭐ 4.9 · Đã bán 11,3k</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <button class="control next" data-installment-next>❯</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="advertise-section">
+                <div class="advertise-header">
+                    <div class="advertise-title">
+                        <i class="icon-star"></i>
+                        <h3 class="txt-yellow">Sắm Tết Sớm - Gía Rẻ Hơn</h3>
+                    </div>
+                </div>
+
+                <div class="advertise-banner">
+                    <img src="https://cdnv2.tgdd.vn/mwg-static/tgdd/Banner/b9/c8/b9c8b208c86be634e4ed8608fc8eec53.png"
+                        alt="Sắm Tết Sớm - Giá Rẻ Hơn">
+                </div>
+            </div>
+
+            <div class="coupon-section">
+                <div class="coupon-header">
+                    <div class="coupon-title">
+                        <i class="icon-star"></i>
+                        <h3 class="txt-yellow">Gian hàng ưu đãi</h3>
+                    </div>
+                </div>
+
+                <div class="coupon-grid">
+                    <div class="coupon-card"><img
+                            src="https://cdn.tgdd.vn/Products/Images/42/334227/vivo-y29-trang-thumb-600x600.jpg"
+                            alt="anh 1"></div>
+                    <div class="coupon-card"><img
+                            src="https://cdn.tgdd.vn/Products/Images/42/360239/TimerThumb/oppo-reno15f-5g-xanh-duong-thumb.jpg"
+                            alt="anh 2"></div>
+                    <div class="coupon-card"><img
+                            src="https://cdn.tgdd.vn/Products/Images/42/360310/xiaomi-redmi-note-15-5g-6gb-128gb-600x600.jpg"
+                            alt="anh 3"></div>
+                    <div class="coupon-card"><img
+                            src="https://cdnv2.tgdd.vn/mwg-static/tgdd/Banner/7a/7d/7a7d4d304df1f562fd12a328e5b5a619.jpg"
+                            alt="anh 4"></div>
+                </div>
+            </div>
+
+            <div class="social-section">
+                <div class="social-box">
+                    <div class="social-header">
+                        <i class="icon-star"></i>
+                        <h3>Mạng xã hội thegioididong.com</h3>
+                    </div>
+
+                    <div class="social-grid">
+                        <a class="social-card" href="#">
+                            <img src="data:image/jpeg;base64,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"
+                                alt="">
+                            <p>Hướng dẫn cách tạo đề thi bằng AI siêu tiện lợi</p>
+                        </a>
+
+                        <a class="social-card" href="#">
+                            <img src="https://cdnv2.tgdd.vn/mwg-static/common/Common/con-may-ngay-nua-den-tet.jpg"
+                                alt="">
+                            <p>Cách gõ a còng @ trên bàn phím máy tính</p>
+                        </a>
+
+                        <a class="social-card" href="#">
+                            <img src="https://cdnv2.tgdd.vn/mwg-static/tgdd/News/Thumb/1588399/redmi-note-15-pro-plus-t639039211748227506.jpg"
+                                alt="">
+                            <p>Hướng dẫn cách tính thuế thu nhập cá nhân</p>
+                        </a>
+
+                        <a class="social-card" href="#">
+                            <img src="https://cdnv2.tgdd.vn/mwg-static/common/Common/hang-oem-la-gi-thumb.jpg" alt="">
+                            <p>Còn bao nhiêu ngày nữa đến Tết 2026?</p>
+                        </a>
+                    </div>
+
+                    <div class="social-more">
+                        <a href="#">Xem thêm <span>›</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="finding-section">
+                <div class="finding-box">
+                    <div class="finding-header">
+                        <i class="icon-star"></i>
+                        <h3>Mọi người cũng tìm kiếm</h3>
+                    </div>
+                    <div class="finding-box">
+                        <div class="finding-tags">
+                            <a href="#">laptop</a>
+                            <a href="#">tai nghe</a>
+                            <a href="#">đồng hồ</a>
+                            <a href="#">pc</a>
+                            <a href="#">macbook</a>
+                            <a href="#">dell</a>
+                            <a href="#">asus</a>
+                            <a href="#">xiaomi</a>
+                            <a href="#">máy tính bảng lenovo</a>
+                            <a href="#">orient star</a>
+                            <a href="#">loa marshall</a>
+                            <a href="#">loa jbl</a>
+                            <a href="#">đồng hồ movado</a>
+
+                            <a href="#">laptop gaming</a>
+                            <a href="#">chuột gaming</a>
+                            <a href="#">gaming phone</a>
+                            <a href="#">đồng hồ đôi</a>
+                            <a href="#">laptop đồ họa</a>
+
+                            <a href="#">iphone 14</a>
+                            <a href="#">iphone 15</a>
+                            <a href="#">iphone 16</a>
+                            <a href="#">iphone 17</a>
+
+                            <a href="#">lenovo legion</a>
+                            <a href="#">lenovo thinkpad</a>
+
+                            <a href="#">macbook pro m5</a>
+                            <a href="#">ipad pro m5</a>
+                            <a href="#">macbook pro m4</a>
+
+                            <a href="#">asus tuf gaming</a>
+
+                            <a href="#">iphone 17 pro</a>
+                            <a href="#">iphone 17 256gb</a>
+                            <a href="#">iphone 17 pro max</a>
+
+                            <a href="#">g304</a>
+                            <a href="#">jbl charge 5</a>
+                            <a href="#">dell g15 5530</a>
+                            <a href="#">hp spectre x360</a>
+                            <a href="#">msi katana 15</a>
+
+                            <a href="#">garmin fenix 8</a>
+                            <a href="#">garmin forerunner 55</a>
+
+                            <a href="#">Máy chạy bộ</a>
+                            <a href="#">máy lọc nước</a>
+
+                            <a href="#">iPhone 16 Plus</a>
+                            <a href="#">iPhone 16 Pro Max</a>
+                            <a href="#">iPhone 16e</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <footer class="tgdd-footer">
+        <div class="footer-inner">
+
+            <!-- CỘT 1 -->
+            <div class="footer-col">
+                <h4>Tổng đài hỗ trợ</h4>
+                <ul>
+                    <li>Gọi mua: <a href="#">1900 232 460</a> (8:00 - 21:30)</li>
+                    <li>Khiếu nại: <a href="#">1800 1062</a> (8:00 - 21:30)</li>
+                    <li>Bảo hành: <a href="#">1900 232 464</a> (8:00 - 21:00)</li>
+                </ul>
+            </div>
+
+            <!-- CỘT 2 -->
+            <div class="footer-col">
+                <h4>Về công ty</h4>
+                <ul>
+                    <li><a href="#">Giới thiệu công ty (MWG.vn)</a></li>
+                    <li><a href="#">Tuyển dụng</a></li>
+                    <li><a href="#">Gửi góp ý, khiếu nại</a></li>
+                    <li><a href="#">Tìm siêu thị (2.956 shop)</a></li>
+                </ul>
+            </div>
+
+            <!-- CỘT 3 -->
+            <div class="footer-col">
+                <h4>Thông tin khác</h4>
+                <ul>
+                    <li><a href="#">Tích điểm Quà tặng VIP</a></li>
+                    <li><a href="#">Lịch sử mua hàng</a></li>
+                    <li><a href="#">Đăng ký bán hàng CTV chiết khấu cao</a></li>
+                    <li><a href="#">Tìm hiểu về mua trả chậm</a></li>
+                    <li><a href="#">Chính sách bảo hành</a></li>
+                    <li><a href="#">Xem thêm</a></li>
+                </ul>
+            </div>
+
+            <!-- CỘT 4 -->
+            <div class="footer-col footer-right">
+                <h4>Website cùng tập đoàn</h4>
+
+                <div class="footer-brands">
+                    <span>TopZone</span>
+                    <span>Điện máy XANH</span>
+                    <span>Bách hóa XANH</span>
+                    <span>Nhà thuốc AN KHANG</span>
+                    <span>AVA Kids</span>
+                    <span>AVAJi</span>
+                    <span>Vui Vui</span>
+                    <span>EraBlue</span>
+                    <span>Thế Giới Số</span>
+                </div>
+
+                <div class="footer-social">
+                    <a href="#">3886.8k Fan</a>
+                    <a href="#">875k Đăng ký</a>
+                    <a href="#">Zalo TGDD</a>
+                </div>
+
+                <div class="footer-cert">
+                    <span>Đã thông báo</span>
+                    <span>DMCA PROTECTED</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer-bottom-wrapper">
+            <div class="footer-bottom">
+                © 2018. Công Ty Cổ Phần Đầu Tư Điện Máy Xanh. GPDKKD: 0303217354 do sở KH & ĐT TP.HCM cấp ngày
+                02/01/2007.
+                GPMXH: 21/GP-BTTTT do Bộ Thông Tin và Truyền Thông cấp ngày 11/01/2021.
+                Địa chỉ: 128 Trần Quang Khải, P.Tân Định, TP. Hồ Chí Minh. Địa chỉ liên hệ và gửi chứng từ: Lô T2-1.2,
+                Đường
+                D1, P.Tăng Nhơn Phú, TP.Hồ Chí Minh. Điện thoại: 028 38125960. Email: hotrotmdt@thegioididong.com. Chịu
+                trách nhiệm nội dung: Huỳnh Văn Tốt. Đại diện ủy quyền giải quyết các vấn đề liên quan bảo vệ quyền lợi
+                người tiêu dùng: Huỳnh Văn Tốt. Email: hotrotmdt@thegioididong.com. Xem chính sách sử dụng
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>

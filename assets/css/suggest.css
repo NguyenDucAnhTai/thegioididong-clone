@@ -1,0 +1,140 @@
+/* Suggest Section */
+
+.suggest-section {
+  position: relative;
+  z-index: 2;
+  max-width: 1000px;
+  margin: 24px auto;
+  background: #fff;
+  border-radius: 14px;
+  padding: 14px 16px 16px;
+}
+
+.suggest-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.suggest-header h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1d2939;
+}
+.suggest-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.suggest-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.suggest-card {
+  position: relative;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.suggest-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.card-badge {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background: #fff7e6;
+  color: #b45309;
+  font-size: 11px;
+  padding: 3px 6px;
+  border-radius: 4px;
+  border: 1px solid #fde68a;
+  font-weight: 500;
+}
+
+.suggest-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+
+.suggest-card .name {
+  font-size: 13px;
+  line-height: 1.3;
+  min-height: 36px;
+  color: #111;
+  margin-bottom: 6px;
+}
+
+.suggest-card .price {
+  color: #e10c00;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.suggest-card .old-price {
+  font-size: 12px;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.suggest-card .rating {
+  font-size: 12px;
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+.suggest-more {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.btn-more {
+  background: #fff;
+  color: #0060ff;
+  border: 1px solid #dbe7ff;
+  border-radius: 999px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.btn-more:hover {
+  background: #f5f9ff;
+}
+
+.btn-more .arrow {
+  transition: transform 0.25s ease;
+}
+
+.btn-more.is-open .arrow {
+  transform: rotate(180deg);
+}
+
+.suggest-card {
+  display: none;
+}
+
+.suggest-card.is-visible {
+  display: block;
+}

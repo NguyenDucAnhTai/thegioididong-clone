@@ -1,0 +1,11 @@
+:root {
+  --tgdd-yellow: #ffd400;
+  --tgdd-red: #d0021b;
+  --tgdd-blue: #0060ff;
+
+  --z-bg: 0;
+  --z-decor: 1;
+  --z-content: 2;
+  --z-control: 5;
+  --z-header: 100;
+}

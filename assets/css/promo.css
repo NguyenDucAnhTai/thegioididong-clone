@@ -1,0 +1,389 @@
+/* ================= PROMO SECTION ================= */
+.container-contain {
+  position: relative;
+  width: 100%;
+  background: url(https://cdnv2.tgdd.vn/webmwg/2024/ContentMwg/images/newyear/2026/TGDD/bg-main.png)
+    center no-repeat;
+  background-size: 100%;
+  background-position: left bottom;
+  background-attachment: fixed;
+  padding: 0 20px;
+  overflow: visible;
+  padding-bottom: 10px;
+}
+
+/* mặc định */
+.decor-left,
+.decor-right {
+  position: absolute;
+  top: 140px;
+  z-index: 5;
+  pointer-events: none !important;
+}
+
+/* khi scroll */
+.decor-left.is-fixed,
+.decor-right.is-fixed {
+  position: fixed;
+  top: 90px; /* dưới topbar */
+}
+
+/* canh layout */
+.decor-left {
+  left: 49%;
+  transform: translateX(-740px);
+  width: 220px;
+  top: 0;
+}
+
+.decor-right {
+  left: 51%;
+  transform: translateX(530px);
+  width: 220px;
+  top: 0;
+}
+
+.decor-left.is-fixed,
+.decor-right.is-fixed {
+  position: fixed;
+  top: 90px; /* dưới topbar fixed */
+}
+
+.decor-left.is-bottom,
+.decor-right.is-bottom {
+  position: absolute;
+  top: auto;
+  bottom: 20px;
+}
+
+/* ================= PROMO CARD ================= */
+.promo-container {
+  position: relative;
+  z-index: 2;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.header-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 40px 0 10px 0;
+}
+
+.icon-star {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background: #ffd400;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+}
+
+.txt-yellow {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* Tabs */
+/* Container chính phải có chiều ngang 100% */
+.promo-tabs-wrap {
+  background-color: #fff;
+  border-radius: 12px 12px 0 0;
+  padding: 0 10px;
+  width: 100%; /* Đảm bảo thanh trắng rộng hết cỡ */
+  box-sizing: border-box;
+}
+
+/* Danh sách cha chứa cả 2 nhóm */
+.promo-tabs {
+  display: flex;
+  justify-content: space-between; /* Đẩy 2 cụm Campaign và Category về 2 phía */
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  cursor: pointer;
+}
+
+/* Các danh sách con (ul) bên trong */
+.promo-campaign ul,
+.promo-category ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-grow: 1; /* Cho phép các nhóm này nở ra để chiếm không gian */
+  justify-content: space-between; /* Cách đều các item con bên trong mỗi nhóm */
+}
+
+/* Tăng khoảng cách cho nhóm Category để dàn đều hơn */
+.promo-category {
+  flex-grow: 2; /* Nhóm chữ thường dài hơn nên ưu tiên không gian hơn */
+}
+
+.promo-category ul {
+  justify-content: space-around; /* Cách đều các chữ như Điện thoại, Laptop... */
+}
+
+/* Định dạng thẻ tab */
+.p-tab {
+  display: flex;
+  align-items: center;
+  padding: 15px 10px; /* Padding vừa đủ */
+  color: #333;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  white-space: nowrap;
+}
+
+.p-tab img {
+  width: 100px;
+  margin: 0 10px;
+  height: auto;
+}
+
+/* Hiệu ứng gạch chân khi active */
+.p-tab.active {
+  color: #f04d23;
+}
+
+.p-tab.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #f04d23;
+}
+/* ================= PROMO WRAPPER (CARD ĐỎ) ================= */
+.promo-wrapper {
+  background: #b4020b;
+  min-height: 500px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  z-index: 1;
+}
+
+/* Timeline */
+/* Container chính - Bây giờ là thanh màu TRẮNG hoàn toàn */
+.timeline {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Căn giữa các item theo chiều dọc */
+  background-color: #fff; /* Nền trắng toàn bộ thanh */
+  border-radius: 10px; /* Bo tròn cực đại kiểu viên thuốc */
+  padding: 10px; /* Khoảng cách để ô đỏ không dính sát mép thanh trắng */
+  width: fit-content;
+  margin: 30px auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border: 1px solid #eee; /* Viền mờ để nổi bật trên nền đỏ của web */
+}
+
+/* Từng item trong bộ đếm */
+.timeline-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 40px; /* Độ rộng cho các ô không active */
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 15px; /* Bo tròn để khi active sẽ đẹp */
+}
+
+/* Ô MÀU ĐỎ - Nhỏ hơn và nằm gọn bên trong */
+.timeline-item.active {
+  background: linear-gradient(180deg, #ff424e 0%, #d50000 100%);
+  color: #fff;
+  padding: 12px 50px; /* Padding lớn hơn một chút để ô đỏ trông to rõ */
+  box-shadow: 0 4px 10px rgba(213, 0, 0, 0.3); /* Bóng đổ cho ô đỏ nổi lên */
+}
+
+/* Chữ nhãn (Chỉ còn / Sắp diễn ra) */
+.label {
+  font-size: 14px;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+/* Bộ đếm ngược */
+.countdown-timer {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 800;
+}
+
+/* Các ô số bên trong ô đỏ - Giữ màu trắng chữ đỏ */
+.countdown-timer .box {
+  background-color: #fff;
+  color: #d50000;
+  padding: 2px 6px;
+  border-radius: 4px;
+  min-width: 28px;
+  text-align: center;
+  font-size: 16px;
+}
+
+/* Mốc thời gian của các ô ngoài (không active) */
+.time {
+  font-weight: 700;
+  font-size: 18px;
+  color: #666; /* Màu xám nhẹ cho các mốc sắp diễn ra */
+}
+
+/* Hiệu ứng hover cho các mục chưa active */
+.timeline-item:not(.active):hover {
+  background-color: #f9f9f9;
+  color: #d50000;
+}
+/* Controls */
+.control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.3);
+  border: none;
+  color: #fff;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  z-index: 100; /* BẮT BUỘC CAO */
+  pointer-events: auto;
+}
+
+.control.prev {
+  left: 10px;
+}
+
+.control.next {
+  right: 10px;
+}
+/* Slider */
+.promo-slider {
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+}
+
+.promo-page-inner {
+  padding: 0 40px;
+  height: 100%;
+}
+
+.promo-page,
+.product-grid,
+.product-card {
+  box-sizing: border-box;
+}
+
+.product-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.promo-track {
+  display: flex;
+  transition: transform 0.4s ease;
+  width: 100%;
+  will-change: transform;
+  pointer-events: auto;
+}
+.promo-page {
+  flex: 0 0 100%;
+  min-width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 12px;
+  padding: 0 10px 20px;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  height: 100%;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card img {
+  height: 160px;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+
+.product-card .name {
+  font-size: 13px;
+  line-height: 1.3;
+  min-height: 34px;
+}
+
+.price {
+  color: #e10c00;
+  font-weight: 700;
+  margin-top: auto;
+}
+
+.old-price {
+  font-size: 12px;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.buy-btn {
+  margin-top: 6px;
+  background: #e8f2ff;
+  color: #0060ff;
+  padding: 6px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+.control.is-disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.extra-btn {
+  display: inline-flex; /* QUAN TRỌNG */
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+
+  padding: 10px 18px;
+  background: #fff; /* NỀN TRẮNG */
+  color: #0060ff; /* XANH TGDD */
+  font-size: 14px;
+  font-weight: 500;
+
+  border: 1px solid #dbe6ff; /* VIỀN NHẸ */
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-bottom: 20px;
+}

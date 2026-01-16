@@ -1,0 +1,72 @@
+/* Shopping Online Card */
+.online-shopping {
+  position: relative;
+  z-index: 2;
+  max-width: 1000px;
+  margin: 24px auto;
+  background: #fff;
+  border-radius: 14px;
+  padding: 14px 16px 16px;
+}
+
+.online-header {
+  padding: 20px 0;
+}
+
+.online-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.online-shopping h3 {
+  color: #1d2939;
+  font-weight: 600;
+}
+
+.online-container {
+  background: #fff;
+  border-radius: 12px;
+  padding: 12px 14px;
+
+  display: flex;
+  gap: 10px; /* RỘNG HƠN */
+}
+
+.online-card {
+  width: 150px;
+  min-height: 160px;
+
+  background: #f6f6f6;
+  border-radius: 12px;
+  padding: 10px 8px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.online-card:hover {
+  background: #f1f1f1;
+  transform: translateY(-2px);
+}
+
+.online-card img {
+  width: 84px;
+  height: 84px;
+  object-fit: contain;
+  margin-bottom: 6px;
+}
+
+.online-card .desc {
+  font-size: 12px;
+  line-height: 1.35;
+  color: #333;
+
+  text-align: center;
+  padding: 0 6px;
+  margin: 0;
+}
